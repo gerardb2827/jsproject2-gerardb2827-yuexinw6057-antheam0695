@@ -6,7 +6,11 @@ $.ajax({
         var stores =[];
         //Prints out all the stores
         for(var i = 0; i<data.length; i++){
-           console.log(data[i].store)
+           //console.log(data[i].store)
+           var currentStore=data[i].store
+           if(!stores.includes(currentStore)){
+               stores.push(currentStore) //Holds all the stores in the mall in an array
+           }
        }
     }
 });
