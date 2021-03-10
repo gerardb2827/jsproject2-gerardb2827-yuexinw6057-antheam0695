@@ -12,5 +12,7 @@ $.ajax({
                stores.push(currentStore) //Holds all the stores in the mall in an array
            }
        }
+        console.log(stores)
     }
+    
 });
