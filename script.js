@@ -4,7 +4,8 @@ $.ajax({
     url: 'https://data.cityofnewyork.us/resource/jvce-szsb.json',//The api for the mall
     dataType: 'json',
     success: function(data) {
-        var answer = 1;
+        //pick # 0-39
+        var answer = 39;
         //prompt("What catagories would you like to look for?: ")
         //console.log(data);
         var stores =[];//Holds stores
@@ -20,26 +21,28 @@ $.ajax({
           }//prints out the catagories
 
 
-
           var currentType = data[i].type
 
           if(!types.includes(currentType)){
               types.push(currentType); //Holds all the stores in the mall in an array
           }
-          //user input used as a type of catagory for store
-
-          var userChoice = (types[answer])
-
-          //List stores with that type
-          document.write(userChoice)
 
        }//loop end
-
-
+       
+       //user input used as a type of catagory for store
+        var userChoice = (types[answer])
+        console.log(userChoice)
+        
+        //We want type to look for store with = type
+        
+        if(){
+            
+        }
+        
         //console.log(stores + types)
 
           
-          console.log(types);
+          //console.log(types);
           //List stores with that type
           
           
