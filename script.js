@@ -8,11 +8,11 @@ $.ajax({
         var answer = 39;
         //prompt("What catagories would you like to look for? Choose a number 0-39")
         //console.log(data);
-        var stores =[];//Holds stores
+        var stores = [];//Holds stores
         var types = [];//Holds catagories
 
         //Prints out all the stores
-        for(var i = 0; i<data.length; i++){
+        for(var i = 0; i < data.length; i++){
            //console.log(data[i].store)
 
           var currentStore = data[i].store
@@ -37,7 +37,7 @@ $.ajax({
         //We want type to look for store with = type
         for(d = 0; d < data.length; d++){
         if(data[d] == userChoice){
-            document.write(data.store)
+            console.log(data.store)
         }
         }
         //console.log(stores + types)
