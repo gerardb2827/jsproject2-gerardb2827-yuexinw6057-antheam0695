@@ -11,15 +11,17 @@ $.ajax({
         //Prints out all the stores
         for(var i = 0; i<data.length; i++){
            //console.log(data[i].store)
-          var currentStore=data[i].store;
-          var currentStore = data[i].store
 
+          var currentStore=data[i].store;
+
+          var currentStore = data[i].store
           if(!stores.includes(currentStore)){
               stores.push(currentStore); //Holds all the stores in the mall in an array
           }//prints out the catagories
           
 
           var currentType=data[i].type;
+
           var currentType = data[i].type
 
           if(!types.includes(currentType)){
@@ -29,10 +31,10 @@ $.ajax({
           var userChoice = (types[answer])
           
           //List stores with that type
-         
+          document.write(userChoice)
           
        }//loop end
-       document.write(userChoice)
+      
        
         //console.log(stores + types)
     }
