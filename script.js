@@ -14,15 +14,12 @@ $.ajax({
         for(var i = 0; i<data.length; i++){
            //console.log(data[i].store)
 
-          var currentStore=data[i].store;
-
           var currentStore = data[i].store
           if(!stores.includes(currentStore)){
               stores.push(currentStore); //Holds all the stores in the mall in an array
           }//prints out the catagories
 
 
-          var currentType=data[i].type;
 
           var currentType = data[i].type
 
@@ -30,6 +27,7 @@ $.ajax({
               types.push(currentType); //Holds all the stores in the mall in an array
           }
           //user input used as a type of catagory for store
+
           var userChoice = (types[answer])
 
           //List stores with that type
@@ -39,6 +37,15 @@ $.ajax({
 
 
         //console.log(stores + types)
-    }
 
-});
+          
+          
+          //List stores with that type
+          
+          
+       }//loop end
+      
+        console.log(types);
+
+    });
+
