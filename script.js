@@ -39,13 +39,13 @@ $.ajax({
         //console.log(stores + types)
 
           
-          
+          console.log(types);
           //List stores with that type
           
           
-       }//loop end
+       }
       
-        console.log(types);
+        
 
     });
 
