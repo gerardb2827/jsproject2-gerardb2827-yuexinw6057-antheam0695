@@ -6,7 +6,7 @@ $.ajax({
     success: function(data) {
         //pick # 0-39
         var answer = 39;
-        //prompt("What catagories would you like to look for? Choose a number 0-")
+        //prompt("What catagories would you like to look for? Choose a number 0-39")
         //console.log(data);
         var stores =[];//Holds stores
         var types = [];//Holds catagories
@@ -32,13 +32,13 @@ $.ajax({
        //user input used as a type of catagory for store
         var userChoice = (types[answer])
         console.log(userChoice)
-        console.log(data)
+       
         
         //We want type to look for store with = type
         
-        //if(data.){
-            
-        //}
+        if(data[i]== userChoice){
+            console.log(data.store)
+        }
         
         //console.log(stores + types)
 
