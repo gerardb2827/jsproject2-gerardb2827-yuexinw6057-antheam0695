@@ -35,11 +35,11 @@ $.ajax({
        
         
         //We want type to look for store with = type
-        
-        if(data[i]== userChoice){
-            console.log(data.store)
+        for(d = 0; d < data.length; d++){
+        if(data[d] == userChoice){
+            document.write(data.store)
         }
-        
+        }
         //console.log(stores + types)
 
           
