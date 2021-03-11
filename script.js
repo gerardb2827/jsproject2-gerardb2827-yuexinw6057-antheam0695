@@ -1,3 +1,5 @@
+//Goal: Make user choose from number so that they can access it 
+
 $.ajax({
     url: 'https://data.cityofnewyork.us/resource/jvce-szsb.json',//The api for the mall
     dataType: 'json',
@@ -6,8 +8,8 @@ $.ajax({
         //prompt("What catagories would you like to look for?: ")
         //console.log(data);
         var stores =[];//Holds stores
-        var types = [];//Holds catagories 
-        
+        var types = [];//Holds catagories
+
         //Prints out all the stores
         for(var i = 0; i<data.length; i++){
            //console.log(data[i].store)
@@ -18,7 +20,7 @@ $.ajax({
           if(!stores.includes(currentStore)){
               stores.push(currentStore); //Holds all the stores in the mall in an array
           }//prints out the catagories
-          
+
 
           var currentType=data[i].type;
 
@@ -29,14 +31,14 @@ $.ajax({
           }
           //user input used as a type of catagory for store
           var userChoice = (types[answer])
-          
+
           //List stores with that type
           document.write(userChoice)
-          
+
        }//loop end
-      
-       
+
+
         //console.log(stores + types)
     }
-    
+
 });
