@@ -6,10 +6,10 @@ $.ajax({
     success: function(data) {
         //pick # 0-39
         var answer = 39;
-        //prompt("What catagories would you like to look for? Choose a number 0-39")
+        //prompt("What categories would you like to look for? Choose a number 0-39")
         //console.log(data);
         var stores = [];//Holds stores
-        var types = [];//Holds catagories
+        var types = [];//Holds categories
         
         //Prints out all the stores
         for(var i = 0; i < data.length; i++){
@@ -17,7 +17,7 @@ $.ajax({
           var currentStore = data[i].store
           if(!stores.includes(currentStore)){
               stores.push(currentStore); //Holds all the stores in the mall in an array
-          }//prints out the catagories
+          }//prints out the categories
 
 
           var currentType = data[i].type
@@ -31,7 +31,7 @@ $.ajax({
 
        }//loop end
        
-       //user input used as a type of catagory for store
+       //user input used as a type of category for store
         
         var userChoice = String(types[answer])
         console.log(userChoice)
