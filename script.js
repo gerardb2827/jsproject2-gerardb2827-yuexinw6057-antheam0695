@@ -25,15 +25,14 @@ $.ajax({
           }
           
           if(data[i].type == userChoice){//Supposed to take the the choice and if the type matches it prints out the store
-//               var storeChoice = (data[i].store);
-              var random = curentStore
+              var storeChoice = (data[i].store);
           }
 
        }//loop end
        
        //user input used as a type of category for store
         var userChoice = types[answer]
-        var storeChoice = data.store;
+        // var storeChoice = data.store;
         
         document.write("You have selected "+userChoice+", you should go to "+storeChoice)
         
