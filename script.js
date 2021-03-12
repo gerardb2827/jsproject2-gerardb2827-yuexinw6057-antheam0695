@@ -25,15 +25,16 @@ $.ajax({
               types.push(currentType); //Holds all the stores in the mall in an array
           }
           
-           if(data[i].type == userChoice){
-               console.log(data[i].store)
+          if(data[i].type == userChoice){
+              console.log(data[i].store)
           }
 
        }//loop end
        
        //user input used as a type of category for store
-        
-        var userChoice = String(types[answer])
+        var numType= types[answer]
+        var userChoice = ""
+        userChoice = numType
         console.log(userChoice)
         
        
