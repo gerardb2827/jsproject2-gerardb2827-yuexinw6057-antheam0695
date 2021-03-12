@@ -6,7 +6,7 @@ $.ajax({
     success: function(data) {
         //pick # 0-39
         var answer = 39;
-        //prompt("What categories would you like to look for? Choose a number 0-39")
+        //prompt("What categorie are you looking for? Choose between numbers 0-39")
         //console.log(data);
         var stores = [];//Holds stores
         var types = [];//Holds categories
