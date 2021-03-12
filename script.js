@@ -25,7 +25,7 @@ $.ajax({
               types.push(currentType); //Holds all the stores in the mall in an array
           }
           
-           if(data[i].type == "Furniture"){
+           if(data[i].type == userChoice){
                console.log(data[i].store)
           }
 
@@ -33,7 +33,7 @@ $.ajax({
        
        //user input used as a type of catagory for store
         
-        var userChoice = (types[answer])
+        var userChoice = String(types[answer])
         console.log(userChoice)
         
        
