@@ -5,7 +5,7 @@ $.ajax({
     dataType: 'json',
     success: function(data) {
         //pick # 0-39
-        var answer = 29;
+        var answer = 39;
         //prompt("What catagories would you like to look for? Choose a number 0-39")
         //console.log(data);
         var stores = [];//Holds stores
@@ -13,7 +13,6 @@ $.ajax({
         
         //Prints out all the stores
         for(var i = 0; i < data.length; i++){
-           console.log(data[i].store)
 
           var currentStore = data[i].store
           if(!stores.includes(currentStore)){
@@ -26,9 +25,9 @@ $.ajax({
               types.push(currentType); //Holds all the stores in the mall in an array
           }
           
-        //   if(data[i].type== data[i].userChoice){
-        //       console.log(data.store)
-        //   }
+           if(data[i].type == "Furniture"){
+               console.log(data[i].store)
+          }
 
        }//loop end
        
@@ -40,11 +39,7 @@ $.ajax({
        
         
         //We want type to look for store with = type
-        for(d = 0; d < data.length; d++){
-            if(data[d] == userChoice){
-                console.log(data.store)
-            }
-        }
+      
         //console.log(stores + types)
 
           //console.log(types);
