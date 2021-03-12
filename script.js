@@ -26,16 +26,15 @@ $.ajax({
           }
           
           if(data[i].type == userChoice){
-              console.log(data[i].store)
+              var storeChoice=(data[i].store)
           }
 
        }//loop end
        
        //user input used as a type of category for store
-        var numType= types[answer]
-        var userChoice = ""
-        userChoice = numType
-        console.log(userChoice)
+        var userChoice= types[answer]
+        
+        document.write("You have selected "+userChoice+", you should go to "+storeChoice)
         
        
         
