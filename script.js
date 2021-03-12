@@ -25,8 +25,8 @@ $.ajax({
               types.push(currentType); //Holds all the stores in the mall in an array
           }
           
-          if(data[i].type == userChoice){
-              var storeChoice=(data[i].store)
+          if(data[i].type == userChoice){//Supposed to take the the choice and if the type matches it prints out the store
+              var storeChoice=(data[i].store)//Doesnt work because userChoice isnt a string, If replaced with a store type it would print store
           }
 
        }//loop end
@@ -37,14 +37,6 @@ $.ajax({
         document.write("You have selected "+userChoice+", you should go to "+storeChoice)
         
        
-        
-        //We want type to look for store with = type
-      
-        //console.log(stores + types)
-
-          //console.log(types);
-          //List stores with that type
-          
        }
       
         
