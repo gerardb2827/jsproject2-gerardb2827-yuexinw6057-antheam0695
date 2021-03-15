@@ -5,7 +5,7 @@ $.ajax({
     dataType: 'json',
     success: function(data) {
         //pick # 0-39
-        var answer = prompt("What category are you looking for? Choose between numbers 0-39");
+        var answer = prompt("What type of product are you looking for? Choose a number between 0-39(These correspond to a different store product)");
         //console.log(data);
         var stores = [];//Holds stores
         var types = [];//Holds categories
